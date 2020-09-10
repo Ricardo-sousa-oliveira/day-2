@@ -1,34 +1,30 @@
 body {
-  margin-top: 200px;
+  margin-top: 180px;
   margin-left: 500px;
-display: flex;
-align-items: center;
-justify-items: center;
-}
-@keyframes border{
-  from {background-color: black;}
-  to {background-color: white;}
-
-}
-.border {
-  position: relative;
-  background: black;
-  padding: 3px;
-  border-radius: 100%;
-  animation-name: border;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-
+  align-items: center;
+  display: flex;
 }
 .module {
-  background: white;
-  color: black;
-  padding: 80px;
-  border-radius: 100%;
+  animation: is-rotation 1s infinite;
+  border: 4px solid white;
+  border-radius: 50%;
+  border-top-color: black;
+  height: 200px;
+  width: 200px;
+  position: absolute;
 
 }
-p {
+@keyframes is-rotation{
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.LOADING p {
+  padding-top: 70px;
+  padding-left: 60px;
   font-family: 'Hind', sans-serif;
   font-size: 20px;
+  position: absolute;
+
 }
